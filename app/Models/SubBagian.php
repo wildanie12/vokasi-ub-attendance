@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class SubBagian extends Model
 {
     use HasFactory;
+
+    protected $table = 'sub_bagian';
+    protected $guarded = ['id'];
 }
