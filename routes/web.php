@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/karyawan', function () {
+    return Inertia::render('Karyawan/Index');
+});
+
 
 Route::get('/inertia-test', function() {
     return Inertia::render('Test/Index', [
