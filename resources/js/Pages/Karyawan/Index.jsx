@@ -1,4 +1,5 @@
 import React from "react";
+import AttendanceForm from "../../Components/Organisms/Karyawan/AttendanceForm";
 import DateTimeMain from "../../Components/Organisms/Karyawan/DateTimeMain";
 import ProfileHeader from "../../Components/Organisms/Karyawan/ProfileHeader";
 import Timeline from "../../Components/Organisms/Karyawan/Timeline";
@@ -17,6 +18,9 @@ const Index = () => {
                     </h4>
                 </div>
                 <Timeline />
+                <div className="container flex justify-center">
+                    <AttendanceForm className="py-16" />
+                </div>
             </div>
         </div>
     );
