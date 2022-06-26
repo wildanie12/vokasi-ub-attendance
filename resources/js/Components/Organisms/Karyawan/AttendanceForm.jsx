@@ -1,4 +1,5 @@
 import React from "react";
+import CheckButton from "../../Molecules/Karyawan/Attendance/CheckButton";
 import ShiftFormInput from "../../Molecules/Karyawan/Attendance/ShiftFormInput";
 import TaskFormInput from "../../Molecules/Karyawan/Attendance/TaskFormInput";
 
@@ -41,6 +42,9 @@ const AttendanceForm = ({ className = "" }) => {
                 shifts={shifts}
                 onChangeShiftInput={handleShift}
             />
+            <div className="hidden lg:block lg:w-auto pl-8">
+                <CheckButton type="in" />
+            </div>
         </div>
     );
 };
