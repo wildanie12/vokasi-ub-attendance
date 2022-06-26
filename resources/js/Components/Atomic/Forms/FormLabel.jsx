@@ -8,7 +8,7 @@ const FormLabel = ({
     className = "",
 }) => {
     return (
-        <div className={`${className} flex items-center space-x-2`}>
+        <div className={`${className} flex items-center space-x-2 select-none`}>
             {icon}
             <label className="uppercase text-sm text-gray-500 font-bold tracking-wider">
                 {label}
