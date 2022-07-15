@@ -17,8 +17,8 @@ const Index = () => {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10">
                 <AssetBlock2 />
             </div>
-            <div className="fixed top-0 -z-20 opacity-5">
-                <img src="/images/plexus_background.png" />
+            <div className="fixed top-0 -z-20 opacity-5 left-0 right-0">
+                <img src="/images/plexus_background.png" className="w-full" />
             </div>
             <div className="w-full flex flex-col items-center justify-center">
                 <div className="container">
