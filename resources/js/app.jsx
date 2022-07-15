@@ -4,14 +4,20 @@
  * building robust, powerful web applications using React + Laravel.
  */
 
-require("./bootstrap");
+// require("./bootstrap");
+import "../css/app.css";
 
 import React from "react";
 import { render } from "react-dom";
 import { createInertiaApp } from "@inertiajs/inertia-react";
+import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 
 createInertiaApp({
-    resolve: (name) => require(`./Pages/${name}`),
+    resolve: (name) =>
+        resolvePageComponent(
+            `./Pages/${name}.jsx`,
+            import.meta.glob("./Pages/**/*.jsx")
+        ),
     setup({ el, App, props }) {
         render(<App {...props} />, el);
     },
