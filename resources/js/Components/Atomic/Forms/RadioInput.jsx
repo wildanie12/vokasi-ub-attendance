@@ -7,6 +7,7 @@ const RadioInput = ({
     label,
     checked,
     onChangeInput,
+    dark = false,
 }) => {
     return (
         <div className="flex items-center space-x-2 select-none">
@@ -30,7 +31,9 @@ const RadioInput = ({
                 className="cursor-pointer peer-checked:hidden inline-block w-5 relative bg-white border border-gray-500 aspect-square rounded-md"
             ></label>
             <label
-                className="cursor-pointer font-poppins text-sm font-semibold text-gray-600"
+                className={`cursor-pointer font-poppins text-sm font-semibold ${
+                    dark ? "text-white" : "text-gray-600"
+                }`}
                 htmlFor={`radio-${name}-${value}`}
             >
                 {label}
